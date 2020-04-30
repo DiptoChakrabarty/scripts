@@ -1,8 +1,8 @@
-file=hello.html
-bucket=your-bucket
+file="hello.html"
+bucket="your-bucket name"
 resource="/${bucket}/${file}"
 contentType="text/html"
-dateValue=`30/04/2020`
+dateValue="30/04/2020"
 stringToSign="PUT\n\n${contentType}\n${dateValue}\n${resource}"
 s3Key=" "
 s3Secret=" "
