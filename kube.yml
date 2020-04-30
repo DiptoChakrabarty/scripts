@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-        name: nginx-web
-        labels:
-                name: webserver
+    name: nginx-web
+    labels:
+        name: webserver
 spec:
-        replicas: 3
-        selector:
-                matchLabels:
-                        name: webserver
-        template:
-                metadata:
-                        labels:
-                                name: webserver
-                spec:
-                        containers:
-                                - name: nginx
-                                  image: nginx
+    replicas: 3
+    selector:
+        matchLabels:
+            name: webserver
+    template:
+        metadata:
+            labels:
+                name: webserver
+        spec:
+            containers:
+                - name: nginx
+                  image: nginx
